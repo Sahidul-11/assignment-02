@@ -10,7 +10,7 @@ body{
 a{
     text-decoration: none;
 }
-ul li{
+nav ul li{
     list-style: none;
 }
 nav{
@@ -113,8 +113,13 @@ main{
     padding: 1rem;
     border-radius: .8rem;
     
-    
-
+}
+.option .element i{
+    margin-right: 5px;
+}
+#color{
+    background: #FF5400;
+    color: #FFF;
 }
 option{
     display: inline;
@@ -124,3 +129,207 @@ select{
     border: none;
 }
 /* banner part end */
+/* populat part start */
+.popular-tur{
+    margin: 5rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.popular-tur .detail{
+    width: calc(50% - 1.5rem);
+}
+.heading-pra{
+    color: #131318;
+   font-size: 2.5rem;
+   font-weight: 800;
+   margin-bottom: 2rem;
+}
+.pra , .popular-tur p{
+    color: rgba(19, 19, 24, 0.70);
+     font-size: 1rem;
+    line-height: 2rem;
+}
+.popular-tur .detail ul{
+    padding-left: 3rem;
+}
+.btn{
+    border: none;
+    border-radius: .5rem;
+    margin-top: 2.5rem;
+    width: 10.5rem;
+    height: 3.3rem;
+    background:#FF5400;
+    margin-bottom: .6rem;
+  
+}
+.btn a{
+     color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+}
+.containers{
+    margin-top: 1.5rem;
+    width: 100%;
+    display: grid;
+    gap: 1rem; 
+    grid-template-areas:
+     " iteam1  iteam1 iteam2  iteam2"
+      "iteam3  iteam4  iteam4  iteam5"
+    " iteam6  iteam6  iteam7  iteam7";
+        
+}
+.header{
+    text-align: center;
+}
+.iteam1{
+    grid-area:iteam1;
+    height: 280px;
+    border-radius: 16px;
+     background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url("../Images/Rectangle\ 5.png");
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.containers p{
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+.iteam2{
+    grid-area: iteam2;
+    height: 280px;
+    border-radius: 16px;
+     background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url("../Images/Rectangle\ 8.png");
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.iteam3{
+    grid-area: iteam3;
+    height: 280px;
+    border-radius: 16px;
+     background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url("../Images/Rectangle\ 6.png");
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-repeat: no-repeat;
+}
+.iteam4{
+    grid-area: iteam4;
+    height: 280px;
+    border-radius: 16px;
+     background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url("../Images/Rectangle\ 7.png");
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.iteam5{
+    grid-area: iteam5;
+    height: 280px;
+    border-radius: 16px;
+     background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url("../Images/Rectangle\ 9.png");
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.iteam6{
+    grid-area: iteam6;
+    height: 280px;
+    border-radius: 16px;
+     background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url("../Images/Rectangle\ 11.png");
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.iteam7{
+    grid-area: iteam7;
+    height: 280px;
+    border-radius: 16px;
+     background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url("../Images/Rectangle\ 10.png");
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+/* populat part end */
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    nav , main{
+        width: 95%;
+    }
+    .bar{
+        visibility: visible;
+    }
+    .hide{
+        display: none;
+    }
+    .nav-container h2{
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+    .description h1{
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    .description{
+        padding: 0;
+    }
+    .pra , .description p{
+        font-size: .9rem;
+        line-height: 1rem;
+    }
+    .option , .popular-tur{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .popular-tur .detail{
+        width: 100%;
+    }
+    .detail h3{
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+
+    }
+    .heading-pra , .detail p{
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    .containers{
+        grid-template-areas: 
+        "iteam1"
+        "iteam2"
+        "iteam3"
+        "iteam4"
+        "iteam5"
+        "iteam6"
+        "iteam7" ;
+    }
+}
