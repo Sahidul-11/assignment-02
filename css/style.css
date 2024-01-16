@@ -171,6 +171,7 @@ select{
 }
 .containers{
     margin-top: 1.5rem;
+    margin-bottom: 2rem;
     width: 100%;
     display: grid;
     gap: 1rem; 
@@ -269,10 +270,187 @@ select{
 }
 /* populat part end */
 
+/* card part */
+.card-container{
+    margin-top: .6rem;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+.card i{
+    margin: 1rem 0;
+    font-size: 3rem;
+    color: #FF5400;
+}
 
+.card{
+    padding: 1rem;
+    width: calc(48% - 1.7rem);
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
 
+}
+.card h4{
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: .5rem;
+}
+.deal-container{
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    gap: 1rem;
+}
+.deal-container .img1{
+    height: 45vh;
+    background: url("../Images/Group\ 39.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+.over{
+    width: 50%;
+    height: 75%;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    padding: 3rem;
+}
+.over i{
+    color: #FF5400;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+.over h5{
+    color: #131318;
+font-size: 24px;
+font-weight: 800;
+line-height: 3rem;
+}
+.over span{
+    color: #FF5400;
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+.deal-container .img3{
+    height: 45vh;
+    background: url("../Images/Group\ 39.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+.deal-container .img2{
+    height: 45vh;
+    background: url("../Images/Group\ 40.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+.all{
+    margin: 0 auto 2rem;
+}
+.all .btn{
+    width: 15rem;
+}
+/* video part start */
+.video-main .header{
+    text-align: left;
 
-
+}
+.video-main{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.newslatter-main{
+    margin-bottom: 4rem;
+    gap: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.newslatter-main .header{
+    padding: 1rem;
+    text-align: left;
+    border-radius: 16px;
+   border: 1px solid #FF5400;
+}
+.newslatter-main .heading-pra{
+    margin-bottom: .8rem;
+}
+.imput-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.newslatter-main input{
+    color: rgba(19, 19, 24, 0.30);
+    margin-top: 1rem;
+    height: 3rem;
+    border: none;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+}
+.newslatter-main .btn{
+    width: 100%;
+}
+.newslatter-img{
+    position: relative;
+}
+.off{
+    color: #FFF;
+    padding-top: 1rem;
+    width: 50%;
+    height: 5rem;
+    border-radius: 16px;
+    background: #FF5400;
+    text-align: center;
+    transform: rotate(-19.628deg);
+    position: absolute;
+    right: 0;
+    bottom: 3.3rem;
+}
+.footer{
+    padding: 130px 0;
+    width: 100%;
+    height: 250px;
+    background: rgba(19, 19, 24, 0.05);
+    text-align: center;
+}
+.footer h2{
+    margin-left: 1rem;
+    display: inline;
+    color: #131318;
+    font-size: 36px;
+    font-weight: 800;
+} 
+.footer h2 span{
+    color: #FF5400;
+}
+.footer .title{
+    display: inline;
+    
+}
+.footer p{
+    margin: 3rem 0;
+}
+.footer i{
+    font-size: 3rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
 
 
 
@@ -304,13 +482,22 @@ select{
         font-size: .9rem;
         line-height: 1rem;
     }
-    .option , .popular-tur{
+    .option , .popular-tur ,
+     .card-container , .video-main
+      , .newslatter-main
+
+    
+    {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .popular-tur .detail{
+    .card , .popular-tur .detail{
         width: 100%;
+    }
+    .card{
+        padding: .3rem;
+        width: 90%;
     }
     .detail h3{
         font-size: 1.4rem;
@@ -332,4 +519,33 @@ select{
         "iteam6"
         "iteam7" ;
     }
+    .img1 , .img2 , .img3{
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .over{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 95%;
+        text-align: center;
+    }
+    .over .btn{
+        margin-top: 10px;
+    }
+    .off{
+        width: 80%;
+        height: 3.5rem;
+        bottom: 2rem;
+    }
+    .footer{
+        height: auto;
+        width: 100%;
+        padding: 0;
+    }
+
 }
